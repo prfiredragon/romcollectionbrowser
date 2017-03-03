@@ -339,7 +339,7 @@ class RomCollection(object):
 		self.useFoldernameAsGamename = False
 		self.doNotExtractZipFiles = False
 		self.makeLocalCopy = False
-		self.diskPrefix = '_Disk.*'
+		self.diskPrefix = '_Disk*.'
 
 		# These are used for XBox, which is now legacy and no longer supported by Kodi
 		self.xboxCreateShortcut = False
