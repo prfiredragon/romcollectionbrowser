@@ -724,12 +724,45 @@
 	<os name="Linux">
 		<detectionMethods>	  
 			<detectionMethod name="commonFolders"/>
-			<detectionMethod name="packagename"/>
+			<detectionMethod name="packagename">
+				<command>ls -1 /usr/lib/libretro</command>
+			</detectionMethod>
 		</detectionMethods>
 		<commonFolders>
 			<folder/>
 		</commonFolders>
 		<platform name="SNES">
+			<emulator name="SNES9X (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>snes9x2010_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>snes9x2010 "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="PlayStation">
+			<emulator name="PCSX (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>pcsx_rearmed_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>pcsx_rearmed "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="PSP">
+			<emulator name="PPSSPP (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>ppsspp_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>ppsspp "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
 		</platform>
 	</os>
 		<os name="OSX">
