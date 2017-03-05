@@ -897,6 +897,32 @@
 				</configuration>
 			</emulator>
 		</platform>
+		<platform name="Game Gear">
+			<alias>Sega Game Gear</alias>
+			<alias>GG</alias>
+			<emulator name="Genesis Plus GX (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>genesis_plus_gx_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>genesis_plus_gx "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="Nintendo DS">
+			<alias>NDS</alias>
+			<alias>DS</alias>
+			<emulator name="DeSmuME (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>desmume_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>desmume "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
 	</os>
 		<os name="OSX">
 		<!-- Set the generic method of detection on OSX to be listing the files in /Applications.
