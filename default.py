@@ -24,7 +24,7 @@ import xbmcaddon
 
 # Shared resources
 addonPath = ''
-addon = xbmcaddon.Addon(id='script.games.rom.collection.browser.robert')
+addon = xbmcaddon.Addon(id='script.games.rom.collection.browser')
 addonPath = addon.getAddonInfo('path')
 
 
@@ -69,7 +69,7 @@ class Main():
 		for arg in sys.argv:
 			param = str(arg)
 			print 'RCB: param = ' +param
-			if param == '' or param == 'script.games.rom.collection.browser.robert' or param == 'default.py':
+			if param == '' or param == 'script.games.rom.collection.browser' or param == 'default.py':
 				print 'RCB: setting launchRCB = True'
 				launchRCB = True
 					
