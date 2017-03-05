@@ -9,7 +9,7 @@ import xbmcaddon
 
 # Shared resources
 addonPath = ''
-addon = xbmcaddon.Addon(id='script.games.rom.collection.browser')
+addon = xbmcaddon.Addon(id='script.games.rom.collection.browser.robert')
 addonPath = addon.getAddonInfo('path')
 		
 BASE_RESOURCE_PATH = os.path.join(addonPath, "resources" )
