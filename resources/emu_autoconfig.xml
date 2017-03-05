@@ -787,6 +787,7 @@
 		</platform>
 		<platform name="Game Boy Advanced">
 			<alias>GameBoy Advanced</alias>
+			<alias>Game Boy Advance</alias>
 			<alias>GBA</alias>
 			<emulator name="MGBA">
 				<detectionMethod name="packagename">
