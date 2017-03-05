@@ -764,6 +764,139 @@
 				</configuration>
 			</emulator>
 		</platform>
+		<platform name="Nintendo 64">
+			<alias>N64</alias>
+			<emulator name="Mupen64Plus (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>mupen64plus_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>mupen64plus "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+			<emulator name="Glupen64 (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>glupen64_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>glupen64 "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="Game Boy Advanced">
+			<alias>GameBoy Advanced</alias>
+			<alias>GBA</alias>
+			<emulator name="MGBA">
+				<detectionMethod name="packagename">
+					<packagename>mgba_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>mgba "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+			<emulator name="GamePlaySP">
+				<detectionMethod name="packagename">
+					<packagename>gpsp_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>gpsp "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="Game Boy Color">
+			<alias>GameBoy Color</alias>
+			<alias>GBC</alias>
+			<emulator name="Gambatte">
+				<detectionMethod name="packagename">
+					<packagename>gambatte_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>gambatte "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="Virtual Boy">
+			<alias>Nintendo Virtual Boy</alias>
+			<emulator name="Mednafen VB">
+				<detectionMethod name="packagename">
+					<packagename>mednafen_vb_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>mednafen_vb "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="SEGA 32X">
+			<alias>32X</alias>
+			<emulator name="Picodrive (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>picodrive_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>picodrive "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="SEGA CD">
+			<emulator name="Genesis Plus GX (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>genesis_plus_gx_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>genesis_plus_gx "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+			<emulator name="Picodrive (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>picodrive_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>picodrive "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="SEGA Master System">
+			<alias>SMS</alias>
+			<emulator name="Genesis Plus GX (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>genesis_plus_gx_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>genesis_plus_gx "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
+		<platform name="Genesis">
+			<alias>Sega Genesis</alias>	
+			<emulator name="Genesis Plus GX (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>genesis_plus_gx_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>genesis_plus_gx "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+			<emulator name="Picodrive (RetroArch)">
+				<detectionMethod name="packagename">
+					<packagename>picodrive_libretro.so</packagename>
+				</detectionMethod>
+				<configuration>
+					<emulatorCommand>/usr/bin/retroarch.sh</emulatorCommand>
+					<emulatorParams>picodrive "%rom%"</emulatorParams>
+				</configuration>
+			</emulator>
+		</platform>
 	</os>
 		<os name="OSX">
 		<!-- Set the generic method of detection on OSX to be listing the files in /Applications.
